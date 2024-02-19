@@ -25,7 +25,7 @@ practices.
 Keywords: Web scraping, Web crawling, APIs, REST APIs, Robots.txt, sitemaps,
 Regex, HTML DOM, Legal & Ethics, Python, BeautifulSoup, Rvest
 
-# Introduction: Extract data from web pages<br>
+# Introduction: Extract data from web pages
 
 Webpages are built and designed for human consumption and not for ease and
 automated data collection (Glez-Peña et al., 2013). For that reason, the data on
@@ -58,7 +58,7 @@ API that allows users to quickly collect data directly from the database behind
 the website (Bradley & James, 2019). However, whether API does not exist or has
 limitations, Web scraping to gather the data is needed (Dongo et. al., 2021).
 
-# Web scraping or APIs<br>
+# Web scraping or APIs
 
 In an ideal world, web scraping wouldn't be necessary, and each website would
 provide an API (Jarmul & Lawson, 2017) to share their data in a structured
@@ -94,7 +94,7 @@ steps in.![](images/table_1.jpg){width="434"}
 
 Table 1 -- Differences between APIs and Web scraping (own creation)
 
-# APIs<br>
+# APIs
 
 The keyword interface is what better describes what an API is, an interface that
 a software program presents to other programs (Jin et. al., 2018). In other
@@ -138,7 +138,7 @@ is:
 
 -   **5XX** range indicates server-side errors.
 
-# Web scraping<br>
+# Web scraping
 
 Web scraping, a software agent, also known as a Web robot (Glez-Peña et al.,
 2013) describes the automated process of accessing websites and downloading
@@ -317,3 +317,40 @@ suggested are:
 
     ![](images/wescraping_phases.jpg)**Figure 1:** Web Scraping phases (Own
     creation)
+
+# References
+
+Mitchell, R. (2018). Web Scraping with Python: Collecting More Data from the
+Modern Web. 2ª Ed. North Sebastopol: O\'Reilly Media.
+
+Jarmul, K., & Lawson, R. (2017). Python Web Scraping. 2ªEd. Birmingham: Packt
+Publishing Ltd.
+
+Dongo, I., Cardinale, Y., Aguilera, A. (2021). A qualitative and quantitative
+comparison between Web scraping and API methods for Twitter credibility
+analysis. *International Journal of Web Information Systems* 17 (6), 580-606.
+
+Glez-Peña, D., Lourenço, A., López-Fernández, H., Reboiro-Jato, M.,
+Fdez-Riverola, F. (2013). Web scraping technologies in an API world. *Briefings
+in Bioinformatics* 15 (5), 788-797.
+
+Bradley, A. & James, R.J.E. (2019). Web Scraping with R. *Association for
+Psychological Science* 2(3), 264-270
+
+Hillen, J. (2019). Web scraping for food price research. *British Food Journal*
+121 (12), 3350-3361.
+
+Dewia, L.C., Meiliana, Chandra, A. (2019). *4th International Conference on
+Computer Science and Computational Intelligence 2019 (ICCSCI)*.
+
+Krotov, V. & Tennyson, M.F. (2021). Web Scraping in the R language: A Tutorial.
+*Journal of the Midwest Association for Information Systems*, Vol. 2021, Article
+5.
+
+Aaglave, K.N., Jadhav, S.S., Khatib, A.F., Khurangale, R.L. (2023). A Survey on
+the Web Scraping: In the Search Data. *International Journal of Scientific
+Research in Computer Science, Engineering and Information Technology* 9(10),
+191-195.
+
+Jin, B., Sahni, S., Shevat, A. (2018). Designing Web APIs: Building APIs that
+developers love. 1^st^ Edition. North Sebastopol: O\'Reilly Media.
