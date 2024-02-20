@@ -154,7 +154,7 @@ data (Glez-Peña et. al., 2013, Hillen, 2019).
 
 It's important to be aware of legal and ethical considerations when scraping
 websites, avoid overloading their servers (Aaglave et. al., 2023), and respect
-the website\'s terms of use described in its \'robots.txt\' file (Glez-Peña et.
+the website's terms of use described in its 'robots.txt' file (Glez-Peña et.
 al., 2013). All these points are forward explored further.
 
 ## Pros & Cons
@@ -258,8 +258,8 @@ Should be aware that requesting a page multiple times in rapid succession can be
 seen as suspicious, or even malicious, use of a website (Eswari et. al., 2022).
 
 Define a user agent to identify our crawler (Jarmul & Lawson, 2017). The
-\'User-Agent\' is an important request header, because the server looks into it
-to find out what kind of program is accessing its contents (browser versus a
+'User-Agent' is an important request header, because the server looks into it to
+find out what kind of program is accessing its contents (browser versus a
 robot), and eventually differentiate user responses (Glez-Peña et. al., 2013).
 
 Reviewing the Terms of Service of the site and ensuring the data taken is not
@@ -287,13 +287,13 @@ web scraping implementation:
     the technical level.
 
 2.  **"Web Crawling"** phase involves developing and running a script that
-    automatically browses (or \"crawls\") the web and retrieves the data needed
+    automatically browses (or "crawls") the web and retrieves the data needed
     for a research project. These crawling applications (or scripts) are often
     developed using programming languages such as R or Python.
 
-3.  **\"Data Organization\"** involves pre-processing and organizing data in a
-    way that enables further analysis. To make further analysis of this data
-    easy, the data needs be to be clean and tidy.
+3.  **"Data Organization"** involves pre-processing and organizing data in a way
+    that enables further analysis. To make further analysis of this data easy,
+    the data needs be to be clean and tidy.
 
 Eswari et. al. (2022) and Hillen (2019) instead of phases, schematised a similar
 procedure by listing a set of tasks. Combining the two procedures, the steps
@@ -321,7 +321,7 @@ suggested are:
 # References
 
 Mitchell, R. (2018). Web Scraping with Python: Collecting More Data from the
-Modern Web. 2ª Ed. North Sebastopol: O\'Reilly Media.
+Modern Web. 2ª Ed. North Sebastopol: O'Reilly Media.
 
 Jarmul, K., & Lawson, R. (2017). Python Web Scraping. 2ªEd. Birmingham: Packt
 Publishing Ltd.
@@ -353,4 +353,4 @@ Research in Computer Science, Engineering and Information Technology* 9(10),
 191-195.
 
 Jin, B., Sahni, S., Shevat, A. (2018). Designing Web APIs: Building APIs that
-developers love. 1^st^ Edition. North Sebastopol: O\'Reilly Media.
+developers love. 1^st^ Edition. North Sebastopol: O'Reilly Media.
