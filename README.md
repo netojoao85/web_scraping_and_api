@@ -4,7 +4,7 @@
 <p align="justify"> To better understand Web data extraction techniques, I wrote a literature review based on scientific papers and books about the theme for a higher awareness of steps and decisions to take in practice. Therefore, on this repository, beyond the theory, you can find examples of how to automatically gather data from web pages by having the steps and decisions taken under good practices. </p> 
 <br>
 
-<b> What can you expect to find? </b>
+<h3> <b> What can you expect to find? </b> </h3>
 <p align="justify"> <b>Topics: </b> Web scraping, Web crawling, API, Robots.txt, sitemaps,	Regex, HTML DOM, Legal & Ethics, Python, BeautifulSoup   </p>
 <p align="justify"> <b>Technologies</b>:
 <table>
