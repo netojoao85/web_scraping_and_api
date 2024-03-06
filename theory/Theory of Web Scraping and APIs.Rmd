@@ -2,17 +2,14 @@
 title: "Web scraping and APIs"
 output:
   html_document:    
-    toc: yes
-    toc_float: yes
-    number_sections: yes
-    css: ../../../styles.css
+    toc: true
+    toc_float: 
+      collapse: false
+      smoth_scroll: false
+    number_sections: true
+    css: styles.css
     pdf_document: default
-  word_document:
-    text_align: justify
-    toc: yes
-editor_options: 
-  markdown: 
-    wrap: 80
+
 ---
 
 From the Theory to the Practice To better understand Web data extraction
