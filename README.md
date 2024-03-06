@@ -1,7 +1,9 @@
 # Web data extraction techniques (Web scraping & REST APIs) 
 <i>From the Theory to the Practice</i>
 
-<p align="justify"> To better understand Web data extraction techniques, I wrote a literature review based on scientific papers and books about the theme for a higher awareness of steps and decisions to take in practice. On this repository, you will find 3 main folders, one with the document written with the theory, another two with practical examples for each method, REST APIs and Web scraping. </p> 
+<p align="justify"> To better understand Web data extraction techniques, I wrote a literature review based on scientific papers and books about the theme for a higher awareness of steps and decisions to take in practice. On this repository, you will find 3 main folders, one with the document written with the theory, another two with practical examples for each method, REST APIs and Web scraping. <br><br>
+You can also find the literature review published on this link:
+</p> 
 <hr>
 <h3> <b> What can you expect to find? </b> </h3>
 <details open><summary><b>Topics</b></summary>
