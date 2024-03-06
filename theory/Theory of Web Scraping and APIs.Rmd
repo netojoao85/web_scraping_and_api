@@ -4,11 +4,31 @@ output:
   html_document:    
     toc: true
     toc_float: 
-      collapse: false
-      smoth_scroll: false
+      collapsed: false
+      smooth_scroll: true
+      
     number_sections: true
     css: styles.css
+    theme: flatly
+    
 ---
+
+
+```{=html}
+
+<style>
+
+  body {text-align: justify;
+        color: black;
+        background-color: white;
+        line-height: 1.5;   
+        }
+        
+  .my_body { line-height: 1.5; }
+        
+</style>
+
+```
 
 
 <h5 style = "color:grey">
@@ -18,13 +38,14 @@ output:
 
 <h5>
 
-![](images/repo_banner.jpg)
+![](images/repo_banner-01.jpg)
 
 <hr>
 
-From the Theory to the Practice To better understand Web data extraction techniques, I wrote a literature review based on scientific papers and books about the theme for a higher awareness of steps and decisions to take in practice. Therefore, on this repository, you can find examples of automatically gathering data from web pages by having the steps and decisions taken under good practices.
+<div class = "my_body">
+To better understand Web data extraction techniques, this literature review is based on scientific papers and books about the theme for a higher awareness of steps and decisions to take under good practice.
 
-Keywords: Web scraping, Web crawling, APIs, REST APIs, Robots.txt, sitemaps, Regex, HTML DOM, Legal & Ethics, Python, BeautifulSoup, Rvest
+<b>Keywords:</b> Web scraping, Web crawling, APIs, REST APIs, Robots.txt, sitemaps, Regex, HTML DOM, Legal & Ethics, Python, BeautifulSoup
 
 # Introduction: Extract data from web pages
 
@@ -145,6 +166,9 @@ Eswari et. al. (2022) and Hillen (2019) instead of phases, schematised a similar
 5.  Store the data in the required format.
 
     ![](images/wescraping_phases.jpg)**Figure 1:** Web Scraping phases (Own creation)
+
+
+</div>
 
 # References
 
