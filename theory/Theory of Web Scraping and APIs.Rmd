@@ -7,9 +7,8 @@ output:
     toc_float: 
       collapsed: false
       smooth_scroll: true
-      
-    number_sections: true
     css: styles.css
+    number_sections: false    
     theme: flatly
 ---
 
@@ -42,7 +41,7 @@ output:
 
 <h5>
 
-![](images/repo_banner-01.jpg)
+![](images/repo_banner.jpg)
 
 <hr>
 
@@ -51,7 +50,7 @@ To better understand Web data extraction techniques, this literature review is b
 
 <b>Keywords:</b> Web scraping, Web crawling, APIs, REST APIs, Robots.txt, sitemaps, Regex, HTML DOM, Legal & Ethics, Python, BeautifulSoup
 
-# Introduction: Extract data from web pages
+# 1. Introduction: Extract data from web pages
 
 Webpages are built and designed for human consumption and not for ease and automated data collection (Glez-Peña et al., 2013). For that reason, the data on the websites are unstructured, which implies using tools/methods/techniques to convert them into a structured form (Eswari et. al., 2022). According to Dongo et. al. (2021), three well-known methods have been applied to extract/collect data from web pages:
 
@@ -65,7 +64,7 @@ An API is an interface that allows communication between software, independent o
 
 Therefore, before scraping a website, it is a good idea to check if it offers an API that allows users to quickly collect data directly from the database behind the website (Bradley & James, 2019). However, whether API does not exist or has limitations, Web scraping to gather the data is needed (Dongo et. al., 2021).
 
-# Web scraping or APIs
+# 2. Web scraping or APIs
 
 In an ideal world, web scraping wouldn't be necessary, and each website would provide an API (Jarmul & Lawson, 2017) to share their data in a structured format (Dongo et. al., 2021). APIs are designed to provide a convenient stream of well-formatted data from one computer program to another (Mitchell, 2018), but although some websites do provide APIs, they typically restrict the data that is available and the frequency it can be accessed (Jarmul & Lawson, 2017, Dongo et. al., 2021). Additionally, website developers might change, remove, or restrict the backend API (Jarmul & Lawson, 2017).<br> <br> On the opposite of web scraping, which is affected by webpage changes, APIs are independent of the information displayed on the website (Dongo et. al., 2021), turning APIs fantastic if you find one that suits your purposes (Mitchell, 2018). Web scraping is more flexible than API extraction once it is not restricted to the information that APIs offer (Dongo et. al., 2021).<br> <br> Regarding cost and rate limit, extracting data using API is not free and has a limit (Dongo et. al., 2021) while with web scraping the costs linked are to the application development to parse and extract the data (Hillen, 2019). Although web scraping does not have a defined rate limit, it makes the website traffic spike and may cause the breakdown of the website server (Eswari et. al., 2022), so is a good practice to make download requests at a reasonable rate (Jarmul & Lawson, 2017) to spread out the traffic to the website.<br> <br> In general, it is preferable to use an API (if one exists), rather than build a bot to get the same data. However, according to Mitchell (2018) an API might not exist or be useful for your purposes, for several reasons: - You are gathering relatively small, finite sets of data across a large collection of websites without a cohesive API. - The data you want is fairly small or uncommon, and the creator did not think it warranted an API. - The source does not have the infrastructure or technical ability to create an API. - The data is valuable and/or protected and not intended to be spread widely. <br><br> Even when an API does exist, the request volume and rate limits, the types of data, or the format of data that it provides might be insufficient for your purposes, this is where web scraping steps in.
 
@@ -99,13 +98,13 @@ kable(
 
 ```
 
-# APIs
+# 3. APIs
 
 The keyword interface is what better describes what an API is, an interface that a software program presents to other programs (Jin et. al., 2018). In other words, an API provides a common ground for one piece of software to talk to another piece of software running on another machine (Anuff, 2017). APIs are building blocks that allow the communication and interaction between systems for major business platforms on the web (Jin et. al., 2018) once they facilitate the interaction between those different software programs and access to their services (Dongo et. al., 2021).
 
 An API paradigm defines the interface exposing the backend data of a service to other applications (Jin et. al., 2018). Within this context, Request-Response APIs expose an interface through an HTTP-based web server with three common paradigms: REST (Representational State Transfer), RPC, and GraphQL (Jin et. al., 2018). REST is the most popular choice for API development and the one we will explore a bit.
 
-REST APIs are all about resources; they handle data as resources and use standard HTTP methods (GET, POST, PUT, DELETE) to perform operations. In practice, operating through the Request-Response cycle, the client makes HTTP requests to the Server that returns responses, typically in JSON or XML format. Our program is called the client, and the web server is called the server. Another relevant concept is Endpoints, which are specific URLs that the client applications use to access the resources of a web service (*source:* <https://realpython.com/api-integration-in-python/#api-endpoints>[)](https://realpython.com/api-integration-in-python/#api-endpoints), combining a URL and an HTTP method. Commonly, an API has multiple endpoints to manage the resources in the web service (*source:* <https://realpython.com/api-integration-in-python/#api-endpoints>[)](https://realpython.com/api-integration-in-python/#api-endpoints).
+REST APIs are all about resources; they handle data as resources and use standard HTTP methods (GET, POST, PUT, DELETE) to perform operations. In practice, operating through the Request-Response cycle, the client makes HTTP requests to the Server that returns responses, typically in JSON or XML format. Our program is called the client, and the web server is called the server. Another relevant concept is Endpoints, which are specific URLs that the client applications use to access the resources of a web service (source: <https://realpython.com/api-integration-in-python/#api-endpoints>[)](https://realpython.com/api-integration-in-python/#api-endpoints), combining a URL and an HTTP method. Commonly, an API has multiple endpoints to manage the resources in the web service (source: <https://realpython.com/api-integration-in-python/#api-endpoints>[)](https://realpython.com/api-integration-in-python/#api-endpoints).
 
 ![](images/api_scheme.jpg)Once a REST API receives and processes an HTTP request, it will return an HTTP response that includes a status code, indicating the success or failure of the request. The Standard HTTP response status code is:
 
@@ -114,7 +113,7 @@ REST APIs are all about resources; they handle data as resources and use standar
 -   **4XX** range indicates a client-side error (like a missing required parameter or too many requests).
 -   **5XX** range indicates server-side errors.
 
-# Web scraping
+# 4. Web scraping
 
 Web scraping, a software agent, also known as a Web robot (Glez-Peña et al., 2013) describes the automated process of accessing websites and downloading specific information (Hillen, 2019, Eswari et. al., 2022), changing unstructured data into a structured form suitable for further analysis and storage (Glez-Peña et. al., 2013). These data can take the form of numbers, text, images, or videos (Bradley & James, 2019).
 
@@ -122,7 +121,7 @@ In practice, web scraping is about writing software which mimics the browsing in
 
 It's important to be aware of legal and ethical considerations when scraping websites, avoid overloading their servers (Aaglave et. al., 2023), and respect the website's terms of use described in its 'robots.txt' file (Glez-Peña et. al., 2013). All these points are forward explored further.
 
-## Pros & Limitations
+## 4.1. Pros & Limitations
 
 **Pros**
 
@@ -134,7 +133,7 @@ It's important to be aware of legal and ethical considerations when scraping web
 -   **Network speed:** The network speed may affect when and how the data is displayed (Glez-Peña et al., 2013), and can affect the data extraction when the page is not displayed (Dongo et. al., 2021).
 -   **Ongoing maintenance:** Every website has a different structure which involves site-specific programming (Eswari et. al., 2022, Glez-Peña et al., 2013). Due to the website changes, the scripts developed must be updated to the new format or layout of the information (Dongo et. al., 2021, Glez-Peña et al., 2013). Although some code elements are helpful as building blocks, there is always a need to adapt the script, depending on how the website is set up, the page structure, authentication requirements, etc., because many websites use reactive elements, simple HTTP requests cannot be used (Hillen, 2019).
 
-## Legal & Ethics considerations
+## 4.2. Legal & Ethics considerations
 
 Web scraping itself is a technology and is not per se illegal or legal, however, legal constraints and ethical concerns can and need to be debated (Hillen, 2019).
 
@@ -148,7 +147,7 @@ Jarmul & Lawson (2017) analysed various cases involving companies, having sugges
 
 In the end, and case of doubts, the best practice is certainly to obtain the explicit permission of the website operator to scrap the data (Hillen, 2019).
 
-## Good practices
+## 4.3. Good practices
 
 Before diving into crawling a website, should be developed an understanding of the scale and structure of the website, for that, robots.txt and sitemaps files can help (Jarmul & Lawson, 2017). Other details could also be important.
 
@@ -158,7 +157,7 @@ Before diving into crawling a website, should be developed an understanding of t
 -   **Identify the technology used by a website**
 -   **Finding the owner of a website**
 
-## Technical procedures
+## 4.4. Technical procedures
 
 When web scraping, it is a good idea to insert pauses between downloading web pages, as this helps spread out the traffic to the website. Web scrapers may be banned from a website if they put undue stress on it (Bradley & James, 2019).
 
@@ -168,7 +167,7 @@ Define a user agent to identify our crawler (Jarmul & Lawson, 2017). The 'User-A
 
 Reviewing the Terms of Service of the site and ensuring the data taken is not considered private or copyrighted are good practices to consider and avoid legal actions against us (Jarmul & Lawson, 2017).
 
-## Phases of Implementation
+## 4.5. Phases of Implementation
 
 There are in the literature mentions of phases for web scraping implementation where each phase requires a different skill set (Krotov & Tennyson, 2021, Dewia et. al., 2019, Eswari et. al., 2022). Although the authors describe different numbers and names of phases, the concept is the same. It can be generically split into 3 phases: firstly, explore the website to check the host permissions and find the target information, write and run the script to collect data from the website (technically called as web crawling), and lastly save/store the data collected. Despite being listed in order are often intertwined and go back and forth between phases until a clean, tidy dataset suitable for further analysis is obtained.
 
@@ -195,7 +194,7 @@ Eswari et. al. (2022) and Hillen (2019) instead of phases, schematised a similar
 
 <hr>
 
-# References
+# 5. References
 
 Mitchell, R. (2018). Web Scraping with Python: Collecting More Data from the Modern Web. 2ª Ed. North Sebastopol: O'Reilly Media.
 
