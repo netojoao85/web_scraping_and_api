@@ -1,5 +1,6 @@
 ---
-title: "Web Data Extraction Techniques"
+title:  <span style="margin-bottom:-10px;"> Web Data Extraction Techniques </span>
+subtitle: <span style="margin-top:-10px;"> Web Scraping & REST APIs </span>
 output:
   html_document:    
     toc: true
@@ -15,23 +16,25 @@ output:
 ```{=html}
 
 <style>
-
+  
+  h1.title{margin-bottom: 3px}
+  
+  h3.subtitle { margin-top: 0px; 
+                margin-bottom: 30px;
+                color: black; }
+  
   body {text-align: justify;
         color: black;
         background-color: white;
-        line-height: 1.5;   
-        }
+        line-height: 1.5; }
         
   .my_body { line-height: 1.5; }
   
   a{color:blue}
+  
         
 </style>
 ```
-**Web Scraping and REST APIs**
-
-<br>
-
 <h5 style = "color:grey">
 
 <b>Author:</b> João Neto\
@@ -104,9 +107,7 @@ An API paradigm defines the interface exposing the backend data of a service to 
 
 REST APIs are all about resources; they handle data as resources and use standard HTTP methods (GET, POST, PUT, DELETE) to perform operations. In practice, operating through the Request-Response cycle, the client makes HTTP requests to the Server that returns responses, typically in JSON or XML format. Our program is called the client, and the web server is called the server. Another relevant concept is Endpoints, which are specific URLs that the client applications use to access the resources of a web service (*source:* <https://realpython.com/api-integration-in-python/#api-endpoints>[)](https://realpython.com/api-integration-in-python/#api-endpoints), combining a URL and an HTTP method. Commonly, an API has multiple endpoints to manage the resources in the web service (*source:* <https://realpython.com/api-integration-in-python/#api-endpoints>[)](https://realpython.com/api-integration-in-python/#api-endpoints).
 
-![](images/api_scheme.jpg)
-
-Once a REST API receives and processes an HTTP request, it will return an HTTP response that includes a status code, indicating the success or failure of the request. The Standard HTTP response status code is:
+![](images/api_scheme.jpg)Once a REST API receives and processes an HTTP request, it will return an HTTP response that includes a status code, indicating the success or failure of the request. The Standard HTTP response status code is:
 
 -   **2XX** range indicates success.
 -   **3XX** codes indicate a resource has moved.
@@ -139,7 +140,7 @@ Web scraping itself is a technology and is not per se illegal or legal, however,
 
 How to deal with web scraping is still subject to discussion in the legal literature and the law is still evolving (Hillen, 2019), despite numerous rulings over the past two decades (Jarmul & Lawson, 2017). In any case, when scraping from a website, we are the guests and need to behave politely otherwise, the IP address may be banned or could suffer legal actions (Jarmul & Lawson, 2017). There is no difference between visiting or scraping a website, in both cases, the user is a guest and thus, is not the owner of the data extracted (Glez-Peña et al., 2013).
 
-Only public content should be accessed, and copyright policies must be complied with (Hillen, 2019). Should also be taken measures to review the Terms of Service of the site (Jarmul & Lawson, 2017). A general rule of thumb, any information stored behind a username and password is considered private and ought not to be web-scraped (Bradley & James, 2019). Large websites require user registration often and are able to detect scrapers (Hillen, 2019).
+Only public content should be accessed, and copyright policies must be complied with (Hillen, 2019). Should also be taken measures to review the Terms of Service of the site (Jarmul & Lawson, 2017). A general rule of thumb, any information stored behind a username and password is considered private and ought not to be web-scraped (Bradley & James, 2019). Large websites require user registration often and can detect scrapers (Hillen, 2019).
 
 If the scraped data is being used for personal and private use, and within fair use of copyright laws, there is usually no problem. However, if the data is going to be republished, if the scraping is aggressive enough to take down the site, or if the content is copyrighted and the scraper violates the terms of service, then there are several legal precedents to note (Jarmul & Lawson, 2017).
 
@@ -191,6 +192,8 @@ Eswari et. al. (2022) and Hillen (2019) instead of phases, schematised a similar
 
     ![](images/wescraping_phases.jpg) **Figure 1:** Web Scraping phases (Own creation)
 :::
+
+<hr>
 
 # References
 
