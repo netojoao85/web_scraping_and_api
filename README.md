@@ -6,7 +6,7 @@ You can also find the literature review published on this link:
 </p> 
 <hr>
 <h3> <b> What can you expect to find? </b> </h3>
-<details open><summary><b>Topics</b></summary>
+<details close><summary><b>Topics</b></summary>
 Web scraping, Web crawling, API, Robots.txt, sitemaps,	Regex, HTML DOM, Legal & Ethics, Python, BeautifulSoup
 </details>
 
