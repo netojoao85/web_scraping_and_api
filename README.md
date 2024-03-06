@@ -1,4 +1,4 @@
-<h1 style= "text-decoration:none"> Web data extraction techniques - Web scraping & REST APIs </h1>
+<h1 style= "text-decoration:none"> Web Data Extraction Techniques - Web Scraping & REST APIs </h1>
 <img src = "https://github.com/netojoao85/web_scraping_and_api/blob/main/images/repo_banner.jpg" alt = "" />
 
 <i>From the Theory to the Practice</i>
