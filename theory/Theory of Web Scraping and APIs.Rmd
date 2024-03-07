@@ -106,7 +106,7 @@ An API paradigm defines the interface exposing the backend data of a service to 
 
 REST APIs are all about resources; they handle data as resources and use standard HTTP methods (GET, POST, PUT, DELETE) to perform operations. In practice, operating through the Request-Response cycle, the client makes HTTP requests to the Server that returns responses, typically in JSON or XML format. Our program is called the client, and the web server is called the server. Another relevant concept is Endpoints, which are specific URLs that the client applications use to access the resources of a web service (source: <https://realpython.com/api-integration-in-python/#api-endpoints>[)](https://realpython.com/api-integration-in-python/#api-endpoints), combining a URL and an HTTP method. Commonly, an API has multiple endpoints to manage the resources in the web service (source: <https://realpython.com/api-integration-in-python/#api-endpoints>[)](https://realpython.com/api-integration-in-python/#api-endpoints).
 
-![](images/api_scheme.jpg)Once a REST API receives and processes an HTTP request, it will return an HTTP response that includes a status code, indicating the success or failure of the request. The Standard HTTP response status code is:
+![](images/api_scheme.jpg)Once a REST API receives and processes an HTTP request, it will return an HTTP response that includes a status code, indicating the success or failure of the request. The full list of possible HTTP errors is defined by the *Internet Engineering Task Force* and is available at <https://tools.ietf.org/html/rfc7231#section-6>. The Standard status code is:
 
 -   **2XX** range indicates success.
 -   **3XX** codes indicate a resource has moved.
