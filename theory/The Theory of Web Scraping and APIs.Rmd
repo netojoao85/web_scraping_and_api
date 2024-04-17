@@ -28,6 +28,11 @@ web_scraping_vs_api_dir           <- "www/web_scraping_vs_api.html"
 api_dir                           <- "www/api.html"
 web_scraping_dir                  <- "www/web_scraping.html"
 web_scraping_pros_limitations_dir <- "www/web_scraping_pros_limitations.html"
+legal_and_ethical_considerations_dir <- "www/legal_and_ethical_considerations.html"
+web_scraping_good_practices_dir   <- "www/web_scraping_good_practices.html"
+web_scraping_technical_procedures_dir <- "www/web_scraping_technical_procedures.html"
+web_scraping_phases_dir           <- "www/web_scraping_phases.html"
+references_dir                    <- "www/references.html"
 ```
 
 
@@ -108,3 +113,45 @@ web_scraping_pros_limitations <- readLines(web_scraping_pros_limitations_dir, wa
 HTML(paste(web_scraping_pros_limitations, collapse = "\n"))
 
 ```
+
+### 4.2. Legal & Ethics considerations
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+legal_and_ethical_considerations <- readLines(legal_and_ethical_considerations_dir, warn = FALSE)
+HTML(paste(legal_and_ethical_considerations, collapse = "\n"))
+
+```
+
+### 4.3. Good practices
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+web_scraping_good_practices <- readLines(web_scraping_good_practices_dir, warn = FALSE)
+HTML(paste(web_scraping_good_practices, collapse = "\n"))
+
+```
+
+### 4.4. Technical procedures
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+web_scraping_technical_procedures <- readLines(web_scraping_technical_procedures_dir, warn = FALSE)
+HTML(paste(web_scraping_technical_procedures, collapse = "\n"))
+
+```
+
+### 4.5. Phases of Implementation
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+web_scraping_phases <- readLines(web_scraping_phases_dir, warn = FALSE)
+HTML(paste(web_scraping_phases, collapse = "\n"))
+
+```
+
+
+## 5. References
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+references <- readLines(references_dir, warn = FALSE)
+HTML(paste(references, collapse = "\n"))
+
+```
+

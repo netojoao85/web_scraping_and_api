@@ -1,0 +1,36 @@
+There are in the literature mentions of phases for web scraping implementation where each phase requires a different skill 
+set (Krotov & Tennyson, 2021, Dewia et. al., 2019, Eswari et. al., 2022). Although the authors describe different numbers and names of 
+phases, the concept is the same. It can be generically split into 3 phases: firstly, explore the website to check the host permissions 
+and find the target information, write and run the script to collect data from the website (technically called as web crawling), and lastly 
+save/store the data collected. Despite being listed in order are often intertwined and go back and forth between phases until a clean, tidy 
+dataset suitable for further analysis is obtained.
+<br><br>
+Krotov & Tennyson (2021) in a web scraping tutorial, described three phases of web scraping implementation:
+<ol type="1">
+    <li><b>"Website Analysis"</b> phase involves examining the underlying structure of a website or a web repository to understand how the 
+        needed data is stored at the technical level.
+    </li>
+    <li><b>"Web Crawling"</b> phase involves developing and running a script that automatically browses (or "crawls") the web and retrieves 
+        the data needed for a research project. These crawling applications (or scripts) are often developed using programming languages such as R or Python.
+    </li>
+    <li><b>"Data Organization"</b> involves pre-processing and organizing data in a way that enables further analysis. To make further analysis of this data 
+        easy, the data needs be to be clean and tidy.
+    </li>
+</ol>
+
+Eswari et. al. (2022) and Hillen (2019) instead of phases, schematised a similar procedure by listing a set of tasks. Combining the two procedures, the 
+steps suggested are:
+
+<ol type="1">
+    <li><b>Find the URL to scrape.</b></li>
+    <li><b>Inspect the page and select the data to extract.</b></li>
+    <li><b>Write the code, test, and debug:</b> once the script is successfully written and tested, its execution can be fully automated by defining a schedule 
+        to start the download and time intervals. However, the scraper can be a failure due to changes on the website, so can be built alerts to send an 
+        e-mail if a script did not run through completely or if the download size is unusually small.
+    </li>
+    <li><b>Run the code and extract the data.</b></li>
+    <li><b>Store the data in the required format.</b></li>
+</ol>
+
+<img src="images/wescraping_phases.jpg ">
+<div style="text-align: center;"><b>Figure 1:</b> Web Scraping phases (Own creation)</div>

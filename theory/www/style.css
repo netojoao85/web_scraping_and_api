@@ -1,6 +1,13 @@
 
 h1.title{
     color: #2C3E50;
+    margin-bottom: 3px;
+}
+
+h3.subtitle {
+    margin-top: 0px; 
+    margin-bottom: 30px;
+    color: black; 
 }
 
 .header_section h5{
@@ -15,7 +22,7 @@ body {
 } 
 
 h2, h3 {
-    color: #00005A;
+    color: #2C3E50;
 }
 
 br{
@@ -28,6 +35,9 @@ br{
     text-align: left;
 }
 
+.paragraph {
+    margin-bottom: 10px;
+}
 
 /*-------------------------------------------------------------------*/
 /* TOC                                                               */
@@ -60,7 +70,7 @@ li.tocify-item {
 
 /* Tab Selected */
 .list-group-item.active, .list-group-item.active:hover {
-    background-color: #00005A;
+    background-color: #2C3E50;
     color:white
 }
 
@@ -87,7 +97,7 @@ li.tocify-item {
 
 /* navbar tab selected */
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    background-color:  #00005A;
+    background-color:  #2C3E50;
     color:white;
     border-bottom: 1px solid black;
 }
