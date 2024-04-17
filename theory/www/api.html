@@ -1,0 +1,30 @@
+The keyword interface is what better describes what an API is, an interface that a software program presents to other 
+programs (Jin et. al., 2018). In other words, an API provides a common ground for one piece of software to talk to 
+another piece of software running on another machine (Anuff, 2017). APIs are building blocks that allow the communication 
+and interaction between systems for major business platforms on the web (Jin et. al., 2018) once they facilitate the 
+interaction between those different software programs and access to their services (Dongo et. al., 2021).
+<br><br>
+An API paradigm defines the interface exposing the backend data of a service to other applications (Jin et. al., 2018). 
+Within this context, Request-Response APIs expose an interface through an HTTP-based web server with three common 
+paradigms: REST (Representational State Transfer), RPC, and GraphQL (Jin et. al., 2018). REST is the most popular 
+choice for API development and the one we will explore a bit.
+<br><br>
+REST APIs are all about resources; they handle data as resources and use standard HTTP methods (GET, POST, PUT, DELETE) to 
+perform operations. In practice, operating through the Request-Response cycle, the client makes HTTP requests to the Server 
+that returns responses, typically in JSON or XML format. Our program is called the client, and the web server is called 
+the server. Another relevant concept is Endpoints, which are specific URLs that the client applications use to access 
+the resources of a web service (source: https://realpython.com/api-integration-in-python/#api-endpoints).
+<br><br>
+
+<img src = "../images/api_scheme.jpg">
+Once a REST API receives and processes an HTTP request, it will return an HTTP response 
+that includes a status code, indicating the success or failure of the request. The full list of possible HTTP errors 
+is defined by the *Internet Engineering Task Force* and is available at https://tools.ietf.org/html/rfc7231#section-6. 
+The Standard status code is:
+<ul>
+    <li><b>2XX</b> range indicates success.</li>
+    <li><b>3XX</b> codes indicate a resource has moved.</li>
+    <li><b>4XX</b> range indicates a client-side error (like a missing required parameter or too many requests).</li>
+    <li><b>5XX</b> range indicates server-side errors.</li>
+</ul>
+  

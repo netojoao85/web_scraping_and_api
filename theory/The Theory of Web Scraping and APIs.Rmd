@@ -1,0 +1,110 @@
+---
+title: "Web Data Extraction Techniques"
+subtitle: "Web Scraping & REST APIs"
+output:
+  html_document:
+    keep_md: false
+    df_print: paged
+    css: www/style.css
+    toc: true
+    toc_float: 
+          collapsed: false
+          smooth_scroll: false
+    number_sections: no
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+library(IRdisplay)
+library(htmltools)
+```
+
+
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+title_and_header_dir              <- "www/title_and_header.html"
+introduction_dir                  <- "www/introduction.html"
+web_scraping_vs_api_dir           <- "www/web_scraping_vs_api.html"
+api_dir                           <- "www/api.html"
+web_scraping_dir                  <- "www/web_scraping.html"
+web_scraping_pros_limitations_dir <- "www/web_scraping_pros_limitations.html"
+```
+
+
+
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+title_and_header <- readLines(title_and_header_dir, warn = FALSE)
+HTML(paste(title_and_header, collapse = "\n"))
+
+```
+
+## 1. Introduction: Extract Data from Web Pages
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+introduction <- readLines(introduction_dir, warn = FALSE)
+HTML(paste(introduction, collapse = "\n"))
+
+```
+
+## 2. Web Scraping VS API's
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+web_scraping_vs_api <- readLines(web_scraping_vs_api_dir, warn = FALSE)
+HTML(paste(web_scraping_vs_api, collapse = "\n"))
+
+
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+table <- data.frame(
+  characteristic = c("Affected by website changes", "Costs", "Limit rate"),
+  Web_Scraping = c("Yes", "Free", "No"),
+  API = c("No", "Not free", "Yes")
+)
+
+kable(
+  x = table,
+  col.names = c("", "Web Scraping", "APIs"),
+  align = c("l", "c", "c")
+  ) %>% 
+  kable_styling(
+    full_width = FALSE,
+    position = "center",
+    bootstrap_options = c("striped", "responsive")) %>% 
+  add_footnote(
+    label = c("Table 1 - Difference between Web Scraping and APIs (Own creation)"), 
+    escape = FALSE,
+    notation = "none") %>% 
+  row_spec(0, background = "#2C3E50", color = "white") %>% 
+  row_spec(1:3, extra_css = "border-bottom: 1px solid grey" )
+
+```
+
+## 3. API's
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+api <- readLines(api_dir, warn = FALSE)
+HTML(paste(api, collapse = "\n"))
+
+```
+
+
+## 4. Web Scraping
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+web_scraping <- readLines(web_scraping_dir, warn = FALSE)
+HTML(paste(web_scraping, collapse = "\n"))
+
+```
+
+
+### 4.1. Pros & Limitations
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+
+web_scraping_pros_limitations <- readLines(web_scraping_pros_limitations_dir, warn = FALSE)
+HTML(paste(web_scraping_pros_limitations, collapse = "\n"))
+
+```
